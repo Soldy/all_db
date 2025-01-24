@@ -1,0 +1,20 @@
+
+/**
+ * @ptable words
+ * @pcol {serial} id 
+**/
+/**
+ * @pdesc
+ * Every id represents a word.
+ * The words are categorized by meaning and type,
+ * not by dialects. However, each word has only one dialect,
+ * but the word can be similar to other words.
+**/
+
+
+
+CREATE TABLE `words` (
+    `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+     UNIQUE KEY `id` (`id`),
+     KEY `index` (`id`)
+)  ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;;

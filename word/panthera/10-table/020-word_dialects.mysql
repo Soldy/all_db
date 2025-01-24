@@ -1,0 +1,24 @@
+
+/**
+ * @ptable word_dialects
+ * @pcol {serial} id 
+ * @pcol {string} dialect  
+**/
+/**
+ * @pdesc
+ *  The word dialect is the existence format of a typical word. 
+ *   Dialects establish many-to-one relationships with words, 
+ *   where one dialect can correspond to multiple words. 
+ *  This part should have a significant performance optimization in the future.
+ *  The table name is not ideal because it suggests a word has many dialects.
+ *  But the words dialects also incorrect.
+ *  After much contemplation, I settled on this for 
+**/
+
+
+CREATE TABLE `word_dialects` (
+    `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT ,
+    `dialect` VARCHAR(128) NOT NULL,
+     UNIQUE KEY `id` (`id`),
+     KEY `index` (`id`)
+)  ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;;
