@@ -1,0 +1,9 @@
+
+/**
+ * @ptable word_dialects
+ * @pfunction word_dialectShow
+ * @ptype get
+ * @pinput {uint64_t} IID - id
+ * @preturn {string} -> dialect
+**/
+
